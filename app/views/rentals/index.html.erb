@@ -1,0 +1,8 @@
+<h1>My Rentals</h1>
+
+<% @rentals.each do |rental| %>
+  <div>
+    <h2><%= rental.video.title %></h2>
+    <%= time_tag rental.created_at %>
+  </div>
+<% end %>
